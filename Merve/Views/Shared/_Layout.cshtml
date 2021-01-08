@@ -1,0 +1,92 @@
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sitenin sekme kısmında görünecek adı -->
+    <title>Fırıncı-İçinizi Isıtacak Lezzetler</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
+          rel="stylesheet">
+    <!-- css dosyasını link ile html sayfasına bağladım -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <!-- Headerın üst kısmındaki sayfa sekmelerinin adı -->
+                <a asp-action="Index" asp-controller="Home" class="logo" style="color: #e1b164">Platon'un Fırını</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="@Url.Action("Index", "Home")" class="nav-link">Anasayfa</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="@Url.Action("About", "Home")" class="nav-link">Hakkımızda</a>
+                    </li>
+                    @if (@Context.Request.Cookies["login"] != null)
+                    {
+                        <li class="nav-item">
+                            <a href="@Url.Action("Order", "Home")" class="nav-link">Sipariş Ver</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("Logout", "Home")" class="nav-link">Çıkış Yap</a>
+                        </li>
+                        
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a href="@Url.Action("About", "Home")#register" class="nav-link">Aramıza Katıl</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="@Url.Action("About", "Home")#login" class="nav-link">Giriş Yap</a>
+                        </li>
+                    }
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+    <hr />
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-about animate-top">
+                    <a href="@Url.Action("Admin", "Home")" class="nav-link">Admin</a>
+                    <h4>Şükrücan Cebeci</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <h4>Oğuzhan Akıncı</h4><br>
+                    <p>sukrucan.ieeektu@gmail.com</p>
+                    <p>Copyright ©2020  All Rights Reserved</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

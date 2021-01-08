@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\about-img-1.jpeg" />
+    <None Include="wwwroot\images\about-img-2.jpeg" />
+    <None Include="wwwroot\images\bakers-delight-1.jpg" />
+    <None Include="wwwroot\images\bakers-delight-2.jpg" />
+    <None Include="wwwroot\images\cavdar.jpg" />
+    <None Include="wwwroot\images\cavdar2.jpg" />
+    <None Include="wwwroot\images\choclate.jpg" />
+    <None Include="wwwroot\images\eki-maya.jpeg" />
+    <None Include="wwwroot\images\eksi2.jpg" />
+    <None Include="wwwroot\images\hakkımızda-ekmek.jpg" />
+    <None Include="wwwroot\images\hero-bg.jpg" />
+    <None Include="wwwroot\images\hero2-bg.jpg" />
+    <None Include="wwwroot\images\hero3-bg.jpg" />
+    <None Include="wwwroot\images\maple.jpg" />
+    <None Include="wwwroot\images\misir.jpg" />
+    <None Include="wwwroot\images\misirli.jpg" />
+    <None Include="wwwroot\images\square-1.jpg" />
+    <None Include="wwwroot\images\square-2.jpg" />
+    <None Include="wwwroot\images\square-3.jpg" />
+    <None Include="wwwroot\images\square-4.jpg" />
+    <None Include="wwwroot\images\story-img.jpg" />
+    <None Include="wwwroot\images\tasteful-recipes.jpg" />
+    <None Include="wwwroot\images\tasty.jpg" />
+    <None Include="wwwroot\images\uzum.jpg" />
+    <None Include="wwwroot\images\yulaf2.jpg" />
+    <None Include="wwwroot\images\yulaflı.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.6.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\Pastane\Pastane\Bin\EntityFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

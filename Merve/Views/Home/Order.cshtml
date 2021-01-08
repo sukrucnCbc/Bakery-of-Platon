@@ -1,0 +1,91 @@
+ <!-- HEADER -->
+@model Merve.Models.Order
+
+
+<!-- DAİMA EN LEZZETLİSİ BANNER -->
+<section class="tasty shared" style="        background: url('/images/tasty.jpg');
+        background-size: cover;">
+    <div class="container">
+        <div class="global-headline">
+            <div class="animate-top">
+                <h2 class="sub-headline">
+                    Siparislerin
+                </h2>
+            </div>
+            <div class="animate-bottom">
+                <h3 class="headline headline-dark" style="color: antiquewhite;">Özenle Hazırlanıyor</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Register SECTION -->
+<section id="register" class="reservation">
+    <div class="container">
+        <div class="reservation__container">
+            <h4>Hemen Sipariş Ver</h4>
+            @using (Html.BeginForm("OrderIt", "Home", FormMethod.Post, new { @class = "reservation__form" }))
+            {
+
+                <div style=" height: 300px;  ">
+                    <div style=" height:100%; width:50%; float: right; padding:15px">
+                        <label style="font-size:15px; font-weight:bold;">Sepetinize Eklemek İstediğiniz Ürünleri Seçiniz </label>
+                        <div style=" height:70%; margin-top: 15px; font-size:12px; padding:5px; padding-top:0;" id="radio">
+                            @Html.RadioButtonFor(m => m.summary, "Ekşi mayalı ekmek")
+                            <label for="Form-company-name">Ekşi mayalı ekmek</label>
+                            <br />
+                            @Html.RadioButtonFor(m => m.summary, "Çavdarlı Ekmek")
+                        <label for="Form-company-nameasdsad">Çavdarlı Ekmek</label>
+                            <br />
+                            @Html.RadioButtonFor(m => m.summary, "Yulaflı Ekmek")
+                        <label for="Form-company-nameasdsad">Yulaflı Ekmek</label>
+                            <br />
+                            @Html.RadioButtonFor(m => m.summary, "Mısır ekmeği")
+                        <label for="Form-company-nameasdsad">Mısır ekmeği</label>
+                         
+                        </div>
+                        <div>
+                            @Html.RadioButtonFor(m => m.summary, "Akçaağaç şuruplu vegan kurabiye")
+                            <label for="Form-company-nameasdsad">Akçaağaç şuruplu vegan kurabiye</label>
+                            <br />
+                            @Html.RadioButtonFor(m => m.summary, "Kuru üzümlü keçiboynuzlu kurabiye")
+                        <label for="Form-company-nameasdsad">Kuru üzümlü keçiboynuzlu kurabiye</label>
+                            <br />
+                            @Html.RadioButtonFor(m => m.summary, "Bol çikolatalı diyet kurabiye")
+                        <label for="Form-company-nameasdsad">Bol çikolatalı diyet kurabiye</label><br />
+                            @Html.RadioButtonFor(m => m.summary, "Tam buğday unundan yapılan cookie.")
+                        <label for="Form-company-nameasdsad">Tam buğday unundan yapılan cookie</label>
+
+                        </div>
+                    </div>
+
+                    <div style=" height:100%; width:50%; padding-left: 205px;">
+
+                        @Html.TextBoxFor(m => m.fullName, new { id = "fullName", name = "fullName", placeholder = "Ad soyad" })
+
+                        @Html.TextBoxFor(m => m.Adress, new { id = "adress", name = "adress", placeholder = "Adres" })
+                        <label style="font-size:15px; font-weight:bold; margin-right: 15px; margin-left: 15px;"> Ödeme Tipi</label>
+                        @Html.RadioButtonFor(m => m.paymentType, "Kredi Kartı")
+
+                        <label style="margin-right:5px;" for="Form-company-name">Kredi Kartı</label>
+
+                        @Html.RadioButtonFor(m => m.paymentType, "Nakit")
+                        <label for="Form-company-nameasdsad">Nakit</label>
+                        <button style="margin-left:15%;margin-top:50px;" type="submit" class="btn btn-primary submit__reservation">Siparişi Onayla</button>
+                    </div>
+
+                   
+                </div>
+            }
+            </div>
+    </div>
+</section>
+
+<br/><br /><br /><br /><br /><br />
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+﻿@model Merve.Models.Order
+@{
+    var Orders = (List<Order>)ViewData["orders"];
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - Platon'un Fırını </title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tasty {
+            background: url(/images/tasteful-recipes.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        table.cinereousTable {
+            background-color: #FFE3C6;
+            width: 102%;
+            height: 200px;
+            text-align: center;
+        }
+
+            table.cinereousTable td, table.cinereousTable th {
+                border: 1px solid #C1AC96;
+                padding: 6px 4px;
+            }
+
+            table.cinereousTable tbody td {
+                font-size: 13px;
+            }
+
+            table.cinereousTable thead {
+                background: #A98750;
+                background: -moz-linear-gradient(top, #bea57c 0%, #b19361 66%, #A98750 100%);
+                background: -webkit-linear-gradient(top, #bea57c 0%, #b19361 66%, #A98750 100%);
+                background: linear-gradient(to bottom, #bea57c 0%, #b19361 66%, #A98750 100%);
+            }
+
+                table.cinereousTable thead th {
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: #F0F0F0;
+                    text-align: left;
+                    border-left: 2px solid #948473;
+                }
+
+                    table.cinereousTable thead th:first-child {
+                        border-left: none;
+                    }
+
+            table.cinereousTable tfoot td {
+                font-size: 18px;
+            }
+
+        h4 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--Hoşgeldin BANNER -->
+    <section class="tasty shared">
+        <div class="container">
+            <div class="global-headline">
+                <div class="animate-top">
+                    <h2 class="sub-headline">
+                        Hosgeldin;
+                    </h2>
+                </div>
+                <div class="animate-bottom">
+                    <h3 class="headline headline-dark" style="color: antiquewhite;">Merve</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Table SECTION -->
+    <h4> Tüm Gemiş Siparişlerini Buradan Görüntüleyebilirsin</h4>
+    <section id="register" class="reservation">
+        <table class="cinereousTable">
+            <thead>
+                <tr>
+                    <th>&nbsp;İsim</th>
+                    <th>&nbsp;Adres</th>
+                    <th>&nbsp;&Ouml;deme Tipi</th>
+                    <th>&nbsp;Siparis &Ouml;zeti</th>
+                    <th>&nbsp;Tarih</th>
+                    <th>&nbsp;Tutar</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Orders)
+                {
+                <tr>
+                    <td>@item.fullName</td>
+                    <td>@item.Adress</td>
+                    <td>@item.paymentType</td>
+                    <td>@item.summary</td>
+                    <td>@item.Date</td>
+                    <td>@item.amount</td>
+
+                </tr>
+                }
+
+
+
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
