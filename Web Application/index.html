@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sitenin sekme kısmında görünecek adı -->
+    <title>Fırıncı-İçinizi Isıtacak Lezzetler</title>
+    <script src="js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- css dosyasını link ile html sayfasına bağladım -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ANA GİRİŞ KARŞILAMA EKRANI -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <!-- Headerın üst kısmındaki sayfa sekmelerinin adı -->
+                <a href="index.html" class="logo">Platon'un Fırını</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hakkimizda.html#register" class="nav-link">Aramıza Katıl</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hakkimizda.html#login" class="nav-link">Giriş Yap</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ANA SİPARİŞ VER BUTONU -->
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1 class="headline">İçinizi Isıtacak Lezzetler</h1>
+            <a href="menu.html" class="btn btn-primary">Sipariş Ver</a>
+        </div>
+    </section>
+
+    <!-- HİKAYEMİZİ KEŞFEDİN ALANI -->
+
+    <section class="our-story">
+        <div class="container">
+            <div class="row">
+                <div class="description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Hikayemizi
+                        </h2>
+                        <h3 class="headline headline-dark">Keşfedin</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Bir rivayete göre Platon'un okulu Akedemia'ya girişte "Ageometretos medeis eisito!" yani  "Matematiksel olanı kavramamış olan giremez" yazar.
+                        Biz de bu sözden hareketle "İnsan sağlığına zararlı olan hiçbir şey bizim fırınımıza giremez!" diyoruz.</p>
+                        <br><p>Medeniyete yön veren Anadolu'da yetişen buğdaylar, şimdi sofralarınıza yön vermeye geliyor.
+                        Daha önce hiç böyle hissetmediniz.
+                        </p>
+                   
+                </div>
+                <div class="image animate-right">
+                    <img class="story-img" src="images/story-img.jpg" alt="bread">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HER ZAMAN EN TAZESİ -->
+    <section class="always-fresh shared">
+        <div class="container">
+            <div class="global-headline">
+                <div class="animate-top">
+                    <h2 class="sub-headline">
+                        Her zaman için
+                    </h2>
+                </div>
+                <div class="animate-bottom">
+                    <h3 class="headline headline-dark">En Tazesi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÜRÜNLER ALANI -->
+    <section class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="image-group padding-right animate-left">
+                    <img src="images/eksi2.jpg" alt="image">
+                    <img src="images/cavdar2.jpg" alt="image">
+                    <img src="images/square-3.jpg" alt="image">
+                    <img src="images/choclate.jpg" alt="image">
+                </div>
+                <div class="description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Ürünleri
+                        </h2>
+                        <h3 class="headline headline-dark">Detaylıca Keşfet</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>180 derecede değil kalbimizin ateşinde pişen, dumanı üstünde sımsıcak ürünlerimiz için hemen meümüzü incele. </p>
+                    <a href="menu.html" class="btn btn-secondary">Sipariş Ver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAİMA EN LEZZETLİSİ BANNER -->
+    <section class="tasty shared">
+        <div class="container">
+            <div class="global-headline">
+                <div class="animate-top">
+                    <h2 class="sub-headline">
+                        Daima
+                    </h2>
+                </div>
+                <div class="animate-bottom">
+                    <h3 class="headline headline-dark">En lezzetlisi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATIŞTIRMALIKLAR ALANI -->
+    <section class="delight">
+        <div class="container">
+            <div class="row">
+                <div class="description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Tatlı ama Masum
+                        </h2>
+                        <h3 class="headline headline-dark">Atıştırmalıklar</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Bir tatlı düşünün. Yerken aldığınız hazzın bi tık ötesinde hayaller kurmanızı sağlayan, aynı zamanda size kalori hesabı yaptırmayan.</p><br>
+                    <p>Çünkü tatlı ürünlerimiz bulutlar kadar hafif.</p>
+                    <a href="menu.html" class="btn btn-secondary">Hemen Sipariş Ver</a>
+                </div>
+                <div class="image-group animate-right">
+                    <img class="animate-top" src="images/bakers-delight-1.jpg" alt="bread">
+                    <img class="animate-bottom" src="images/bakers-delight-2.jpg" alt="bread">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-about animate-top">
+                    <h4>Merve Parlak</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>Yıllardır matematik öğretti, artık ekmek yapıyor.</p><br>
+                    <p>_205006007_</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
