@@ -1,0 +1,6 @@
+![index](https://github.com/sukrucnCbc/Bakery-of-Platon/blob/master/Web%20Application/images/ss1.png?raw=true)
+![Resim](https://github.com/sukrucnCbc/Bakery-of-Platon/blob/master/Web%20Application/images/ss2.png?raw=true)
+![Resim](https://github.com/sukrucnCbc/Bakery-of-Platon/blob/master/Web%20Application/images/ss3.png?raw=true)
+![Resim ](https://github.com/sukrucnCbc/Bakery-of-Platon/blob/master/Web%20Application/images/ss4.png?raw=true)
+![Resim ](https://github.com/sukrucnCbc/Bakery-of-Platon/blob/master/Web%20Application/images/ss5.png?raw=true)
+![Resim ](https://github.com/sukrucnCbc/Bakery-of-Platon/blob/master/Web%20Application/images/ss6.png?raw=true)
